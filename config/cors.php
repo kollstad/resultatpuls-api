@@ -2,24 +2,26 @@
 
 return [
 
+    // Hvilke paths som CORS-beskyttes
     'paths' => [
-        'api/*',       // våre API-endepunkter
-        'sanctum/csrf-cookie', // ufarlig å ha med
+        'api/*',
+        'sanctum/csrf-cookie',
     ],
 
-    // Les tillatte origins fra .env (komma-separert)
+    // Eksplisitte origins fra .env (komma-separert)
+    // Eksempler settes i steg B under.
     'allowed_origins' => array_filter(array_map('trim', explode(',', env('FRONTEND_ORIGINS', '')))),
 
-    // Behold default for patterns
-    'allowed_origins_patterns' => [],
+    // Tillat alle Vercel-subdomener (preview + prod)
+    'allowed_origins_patterns' => [
+        '#^https://.*\.vercel\.app$#',
+    ],
 
-    // Tillatte metoder
-    'allowed_methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    // Vær litt raus i starten – enklere feilsøking
+    'allowed_methods' => ['*'],
+    'allowed_headers' => ['*'],
 
-    // Tillatte headere (browser sender ofte disse)
-    'allowed_headers' => ['Content-Type', 'Accept', 'Authorization', 'X-Requested-With'],
-
-    // Om respons-headere som UI bør lese
+    // Header(e) UI kan lese (valgfritt)
     'exposed_headers' => [
         'X-RateLimit-Limit',
         'X-RateLimit-Remaining',
@@ -28,6 +30,6 @@ return [
 
     'max_age' => 600,
 
-    // Bruker vi ikke cookie-basert auth → false
+    // Ingen cookie-basert auth på tvers av domener → false
     'supports_credentials' => false,
 ];
