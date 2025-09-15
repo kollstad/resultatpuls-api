@@ -10,6 +10,12 @@ use App\Http\Controllers\Api\V1\{
 
     Route::get('/ping', fn () => response()->json(['ok' => true, 'ts' => now()->toIso8601String()]));
 
+        Route::get('/health', fn () => response()->json([
+        'ok' => true,
+        'app' => config('app.name'),
+        'env' => config('app.env'),
+    ]))->name('health');
+
     Route::prefix('v1')->group(function () {
         // Enkle helse-sjekk
         Route::get('/ping', fn () => response()->json(['ok' => true, 'ts' => now()->toIso8601String()]));
