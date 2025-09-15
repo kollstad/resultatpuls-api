@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
+use App\Http\Controllers\Controller;
+
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
