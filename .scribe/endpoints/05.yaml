@@ -1,0 +1,134 @@
+name: Performances
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/performances
+    metadata:
+      groupName: Performances
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List performances'
+      description: ''
+      authenticated: false
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      athlete_id:
+        name: athlete_id
+        description: 'uuid Filter på utøver.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      event_id:
+        name: event_id
+        description: 'uuid Filter på stevne.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      discipline_code:
+        name: discipline_code
+        description: 'Filter på øvelse (f.eks. 100m).'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      date_from:
+        name: date_from
+        description: 'date yyyy-mm-dd.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      date_to:
+        name: date_to
+        description: 'date yyyy-mm-dd.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      legal:
+        name: legal
+        description: true/false.
+        required: false
+        example: false
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      status:
+        name: status
+        description: OK/DQ/DNF/DNS/NM.
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      sort:
+        name: sort
+        description: Sorteringsfelt.
+        required: false
+        example: '-created_at'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanQueryParameters:
+      athlete_id: architecto
+      event_id: architecto
+      discipline_code: architecto
+      date_from: architecto
+      date_to: architecto
+      legal: false
+      status: architecto
+      sort: '-created_at'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Server Error"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

@@ -1,0 +1,68 @@
+name: Clubs
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/clubs
+    metadata:
+      groupName: Clubs
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List clubs'
+      description: ''
+      authenticated: false
+      deprecated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      district_id:
+        name: district_id
+        description: 'uuid Filter på krets.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      q:
+        name: q
+        description: 'Fritekstsøk på navn.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanQueryParameters:
+      district_id: architecto
+      q: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Server Error"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
