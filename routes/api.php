@@ -27,8 +27,8 @@ use App\Http\Controllers\Api\V1\{
         Route::get('/athletes',    [AthleteController::class, 'index']);
         Route::get('/events',      [EventController::class, 'index']);
         Route::get('/performances',[PerformanceController::class, 'index']);
-        Route::get('/v1/health', [HealthController::class, 'basic']);   // lettvekts
-        Route::get('/v1/health/full', [HealthController::class, 'full']); // dyp sjekk
+        Route::get('/health', [HealthController::class, 'basic']);   // lettvekts
+        Route::get('/health/full', [HealthController::class, 'full']); // dyp sjekk
 
         Route::middleware(['auth:sanctum','throttle:write'])->group(function () {
             Route::post('/districts',    [DistrictController::class, 'store'])->middleware('abilities:districts:write');
