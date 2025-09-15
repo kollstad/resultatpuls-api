@@ -110,6 +110,12 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-ping">
                                 <a href="#endpoints-GETapi-v1-ping">GET api/v1/ping</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-health">
+                                <a href="#endpoints-GETapi-v1-health">GET api/v1/health</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-health-full">
+                                <a href="#endpoints-GETapi-v1-health-full">GET api/v1/health/full</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-districts">
                                 <a href="#endpoints-POSTapi-v1-districts">POST api/v1/districts</a>
                             </li>
@@ -165,7 +171,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 13, 2025</li>
+        <li>Last updated: September 15, 2025</li>
     </ul>
 </div>
 
@@ -242,7 +248,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -400,7 +406,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -557,7 +563,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -735,8 +741,8 @@ fetch(url, {
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-access-control-allow-origin: *
-set-cookie: XSRF-TOKEN=eyJpdiI6ImtQbmpsa3c2VEFDWmVzYmdvblZid3c9PSIsInZhbHVlIjoiL082TzQybm82OWR0KzRIYXhXMVNIb3Z4V1lBNzlFT3hWeEF2V0lOU0dmMzJSZXdNZ2dtc1pwUjR1aW9ISmI4RElqOWdUbmF3MWFVTzNTaFZodzRzT0NZSkt5c204WUUxdmV0QytUcS9DQUgzQmJYRjhXZ0g4czZNTjUxRWhoOVMiLCJtYWMiOiI1ZTMyYjMyOTAwNjUwNzBkMzUzNDk3ZWNmOTVjYTc2Njk1MzVhNzZkYTU0MjdlMjg3Mjg1NDAxM2YyYWYwMmVhIiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 20:22:50 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6InY5OWd0ZkFUVXJ0L2RleFV1NjlRZmc9PSIsInZhbHVlIjoiYjRvR3lvWis5K2kzZEZCVk5hM0lzSjREQ1dmSi9LR2xzU0RoUXo0VTZidUVZbk5oU01vN1VVaW9YeTJ3RldvLysrNVVBTmM5UUdaRmo1NlhkS29ZT2JYWGZWRWZFc0NzRkhCbm8wTFJCL1phN3l4OW5QTGhzSGJtSVhzanIxeWUiLCJtYWMiOiIxZmQzYmMxZGYzY2U2OWU0ZGY3MDI5ZWQ5NmRkZDViYTA1YWQwNWEzNDIyMmNjNmI0ODZjMWYwMWViNmE4ODY3IiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 20:22:50 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+vary: Origin
+set-cookie: XSRF-TOKEN=eyJpdiI6ImpnWHdLbUhYTDFtVXdEUEltU05ybVE9PSIsInZhbHVlIjoiOUdxdVc4by9TNzBGNjB1TXN0aWFDdnVRbnU5M3hkZzAxbXNYUERjUkxUakdib1c5ZlVZUklXQWFJWDd1QytHSkpqM1lka3h4dGN3RFZzdkpMQmxPVHpkclkwbFM3MXhUdHFPMDV6RkNMUHF0MEZ2cGVEUFM1azljRk1YUkNMak8iLCJtYWMiOiIzMzE3OWYyZDYxZDE0MGYxNmQwZmE0OGU5NWExNGQ0N2U0ZGQ2YTA2ZGYxOGI4ZDY5N2NhMjg5NDI0YWM2MGYxIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6Ikp5TmloN3AzT3owcEtVNG0xZ01wUXc9PSIsInZhbHVlIjoieG10cW1RUXdtT3M4T3pheWV2dkNqS0FnYnZuTEl3S0lEYy9WbjlsbS91THVsNkZrSTE1NW5ZSUMzdElhRGd4VktRVld3WDlOV3FvL2JpeXFlWitoK3E0WHNEMmFMdGk4c3ZOSDZWcnErNmZ5b2t4cEx0cy9ERVA4L0pEc1poMk8iLCJtYWMiOiJlNTk4ZWM4MjI2NTNjMmIwZjI5ZGJlZWViNjE3MzM1NDEzMTY1MDQ1NWNkZmNkMTZiN2I5MTBhYTM5MTU2MmRjIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 <code>Empty response</code>
  </pre>
@@ -857,12 +863,12 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;ok&quot;: true,
-    &quot;ts&quot;: &quot;2025-09-13T18:22:50+00:00&quot;
+    &quot;ts&quot;: &quot;2025-09-15T16:11:08+00:00&quot;
 }</code>
  </pre>
     </span>
@@ -982,12 +988,12 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;ok&quot;: true,
-    &quot;ts&quot;: &quot;2025-09-13T18:22:50+00:00&quot;
+    &quot;ts&quot;: &quot;2025-09-15T16:11:08+00:00&quot;
 }</code>
  </pre>
     </span>
@@ -1055,6 +1061,264 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Accept"                data-endpoint="GETapi-v1-ping"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-v1-health">GET api/v1/health</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-health">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/health" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/health"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-health">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;app&quot;: &quot;Laravel&quot;,
+    &quot;env&quot;: &quot;local&quot;,
+    &quot;time&quot;: &quot;2025-09-15T16:11:08.309242Z&quot;,
+    &quot;version&quot;: &quot;12.28.1&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-health" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-health"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-health"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-health" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-health">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-health" data-method="GET"
+      data-path="api/v1/health"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-health', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-health"
+                    onclick="tryItOut('GETapi-v1-health');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-health"
+                    onclick="cancelTryOut('GETapi-v1-health');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-health"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/health</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-health"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-health"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-v1-health-full">GET api/v1/health/full</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-health-full">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/health/full" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/health/full"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-health-full">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;checks&quot;: {
+        &quot;db&quot;: true,
+        &quot;cache&quot;: true,
+        &quot;storage&quot;: true
+    },
+    &quot;time&quot;: &quot;2025-09-15T16:11:08.327815Z&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-health-full" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-health-full"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-health-full"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-health-full" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-health-full">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-health-full" data-method="GET"
+      data-path="api/v1/health/full"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-health-full', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-health-full"
+                    onclick="tryItOut('GETapi-v1-health-full');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-health-full"
+                    onclick="cancelTryOut('GETapi-v1-health-full');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-health-full"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/health/full</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-health-full"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-health-full"
                value="application/json"
                data-component="header">
     <br>
@@ -2262,7 +2526,7 @@ content-type: application/json
                 &lt;p class=&quot;mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed&quot;&gt;
                     HTTP request received.
 
-                                            Response rendered in 476ms.
+                                            Response rendered in 625ms.
                                     &lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -2389,7 +2653,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
-set-cookie: XSRF-TOKEN=eyJpdiI6Ik8rUTh5eGgwMlpGNDBHQnp4dDJGbFE9PSIsInZhbHVlIjoiaW92a2QxcFFyZ3YzWXUrWGwyclh4bGZTMDdjR3lqOEZncGV5TXAwcUR4ZXFxOHhtekpiL2xROElvYUM1ekdNd1YxNUFvT2F4Y1FrOGo2NDByanFVck1LNmFkRDdNRE5hb2sxME1pRnV6VGdzWngyRy9WcW1XQlpSSTJVd3J2ZWgiLCJtYWMiOiI4YjQ4ZmFiMDdkMGI3NzIzYTdhZDk2ZjE2ZDBlOWRiNDZkMmUxMTIwNjM3Y2YwODQzMjEwMjBmN2U3ZDAyZjlhIiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 20:22:50 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6IlVXQkh0UnRvNFh3WTBhdUdiRE1udmc9PSIsInZhbHVlIjoiVFh3dzBIK0Z6bHN0citaZmxZemNocDNrZW9vUThtaFlSVEdXTG5DRnJMWVBkQldOK00wMkhxMlFwOUJ6ZXZURU9mVWtTT0ZmRGZkdU02YTBLdEpvNlJCd2pRSTE2cU82SmNpRk0rNnlXb282aG5qQXoxUjlFUlI2c2piNlMzRFkiLCJtYWMiOiI5M2YyY2Q0NmE0ZTMxYmVhZjFlZDg0YjdiMjM1NDEzOTFhNjg4YjE1YTIyNzM0OWFiMjViNWE3MDQ0N2JmNzliIiwidGFnIjoiIn0%3D; expires=Sat, 13 Sep 2025 20:22:50 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6IkNuNXF1bmR2Snk3NkM3RkVTNndPeHc9PSIsInZhbHVlIjoicTk3T1lrZGZtZHZnNWJvaFdxeXZPTUlvWDRmam5ic3A4WDVEdWtJWmk0Q2VVNHpBNlA3UitaOEFneUpPZ2VFaWxqeXFMSlc4NGk1Q2ZoUWpIYUROUlR4aUlPMDE0enljNXFXSmhzRVE3OW5ndm03S0hSdXYram9PVnhmZjgvNHciLCJtYWMiOiI4MzI2OTIwOTM5OGI3OTI0Y2Y5ZmVmZGZlNWQxODVjYzQ1M2FmM2QxMjFjYjZmNmRjMmI2ZDc0ZWRlZGI4NGM3IiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6IldqNmMyYnh4V0J1K1gzTUJGZGFJK2c9PSIsInZhbHVlIjoiNXhMT0IvTm9QZUsrcklteXpKa0V4aEdDaWxWY1lVaGlDMEtXMEduYUZLOW92cGQ5blN1dWMrWmwzeWhsTVBwVUt1N0JRTWZ2clViWCtZRXZscUlPREp2U2wrUENUMjEzRE5UeUNQdWFic1BGYjl2Z0w1emgvL1oxVklFZzhWQW0iLCJtYWMiOiIzMjk5OTNmODVlNzk1N2U4YTIxNzQ4ZjZhYmRlNDczNjRiOWEzZmY2ODQ3M2E0MjI2ODk2ZjVkNDI0ODQyZTQwIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">&lt;!DOCTYPE html&gt;
@@ -2902,7 +3166,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3088,7 +3352,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
