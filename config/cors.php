@@ -3,19 +3,19 @@
 return [
 
     // Hvilke paths som CORS-beskyttes
-    'paths' => [
+  'paths' => [
         'api/*',
         'sanctum/csrf-cookie',
+        'docs*',        // hvis du vil åpne API-dokumentasjon fra frontend
     ],
+
 
     // Eksplisitte origins fra .env (komma-separert)
     // Eksempler settes i steg B under.
     'allowed_origins' => array_filter(array_map('trim', explode(',', env('FRONTEND_ORIGINS', '')))),
 
     // Tillat alle Vercel-subdomener (preview + prod)
-    'allowed_origins_patterns' => [
-        '#^https://.*\.vercel\.app$#',
-    ],
+    'allowed_origins_patterns' => [],
 
     // Vær litt raus i starten – enklere feilsøking
     'allowed_methods' => ['*'],
@@ -27,6 +27,7 @@ return [
         'X-RateLimit-Remaining',
         'Retry-After',
     ],
+
 
     'max_age' => 600,
 
