@@ -145,3 +145,10 @@ curl -X POST http://127.0.0.1:8000/api/v1/performances   -H "Content-Type: appli
 ## 📄 Lisens
 
 MIT (kode). Åpne data kan merkes med CC BY 4.0.
+
+Forge
+-- oppsett av app-server på digital ocean
+Sudo Password:
+$EY}P}.iSpu2lhT1C6FY
+Database Password:
+vWjTUW3PoxsyarJK7YWt
