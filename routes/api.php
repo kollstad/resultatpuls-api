@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
+
 use App\Http\Controllers\Api\V1\{
     HealthController,
     DistrictController,
@@ -9,6 +12,16 @@ use App\Http\Controllers\Api\V1\{
     EventController,
     PerformanceController
 };
+
+Route::middleware('web')->group(function () {
+    // CSRF-cookie til SPA
+    Route::get('/sanctum/csrf-cookie', fn() => response()->noContent());
+    // Login / Logout
+    Route::post('/auth/login', [\App\Http\Controllers\AuthController::class, 'login']);
+    Route::post('/auth/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->middleware('auth:sanctum');
+    // Returner pålogget bruker
+    Route::get('/auth/me', fn(Request $r)=>$r->user())->middleware('auth:sanctum');
+});
 
 // Global ping (f.eks. /api/ping) – nyttig for en superlett helsesjekk uten prefix
 Route::get('/ping', fn () => response()->json(['ok' => true, 'ts' => now()->toIso8601String()]));

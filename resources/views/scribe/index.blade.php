@@ -742,7 +742,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 vary: Origin
-set-cookie: XSRF-TOKEN=eyJpdiI6ImpnWHdLbUhYTDFtVXdEUEltU05ybVE9PSIsInZhbHVlIjoiOUdxdVc4by9TNzBGNjB1TXN0aWFDdnVRbnU5M3hkZzAxbXNYUERjUkxUakdib1c5ZlVZUklXQWFJWDd1QytHSkpqM1lka3h4dGN3RFZzdkpMQmxPVHpkclkwbFM3MXhUdHFPMDV6RkNMUHF0MEZ2cGVEUFM1azljRk1YUkNMak8iLCJtYWMiOiIzMzE3OWYyZDYxZDE0MGYxNmQwZmE0OGU5NWExNGQ0N2U0ZGQ2YTA2ZGYxOGI4ZDY5N2NhMjg5NDI0YWM2MGYxIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6Ikp5TmloN3AzT3owcEtVNG0xZ01wUXc9PSIsInZhbHVlIjoieG10cW1RUXdtT3M4T3pheWV2dkNqS0FnYnZuTEl3S0lEYy9WbjlsbS91THVsNkZrSTE1NW5ZSUMzdElhRGd4VktRVld3WDlOV3FvL2JpeXFlWitoK3E0WHNEMmFMdGk4c3ZOSDZWcnErNmZ5b2t4cEx0cy9ERVA4L0pEc1poMk8iLCJtYWMiOiJlNTk4ZWM4MjI2NTNjMmIwZjI5ZGJlZWViNjE3MzM1NDEzMTY1MDQ1NWNkZmNkMTZiN2I5MTBhYTM5MTU2MmRjIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6IlJXVVVIVjVGOEtDdHc3QlpGSThGNGc9PSIsInZhbHVlIjoiQWZlSUhjMXVCQitIR3BXS2xZWENpanlWSnd4blRIbWdjQXVtanM2VWVaRFdHcElHZnJnMEs3eTVUcWdZZFpZNlJVcUh5K3QvUXhjMDlnTGhrZzEvc0xFNEU0T2l0T3lCZHFuRWNBTWxONzRTblJ1R0h0cWlYRXh3Nmc1RDJPb3ciLCJtYWMiOiJjMDAwNGNkNGY1YWRmOThlZTQxMzcxOGRjYTEwODIyOGU5NDA0YWYzYzQ4ZTZhYzE3NmI3MmNkMDY1OWU4MWY5IiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:29:56 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6ImdvYmNVSGdwY0xsdWl6a1NnRVZwT1E9PSIsInZhbHVlIjoiT1FKbVNMeko4Z1RyNnd3RzR6NUtEUEpyQ2pWM0hLNmtxUCtZZGhFYlNwaFBGc3VDTnM5YTczeGxJWkVHdzkyNGVSSzZONHJLUklaUXJUeEVxYmM3a0crQVF5Vy9GTkJtS1dvZ3JGZmwvaXM3L0hocndMaU5DYi9jWkxtSXFFS3EiLCJtYWMiOiIxOTBhZGFjNTFmMTdjZjFjZDlmODYyYWNhNGZlOGZlNWIyZGIwZGNiYTRjZjQzYzYwMzgxM2UwYmI5ZWI3ODhhIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:29:56 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 <code>Empty response</code>
  </pre>
@@ -868,7 +868,7 @@ vary: Origin
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;ok&quot;: true,
-    &quot;ts&quot;: &quot;2025-09-15T16:11:08+00:00&quot;
+    &quot;ts&quot;: &quot;2025-09-15T16:29:56+00:00&quot;
 }</code>
  </pre>
     </span>
@@ -993,7 +993,7 @@ vary: Origin
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;ok&quot;: true,
-    &quot;ts&quot;: &quot;2025-09-15T16:11:08+00:00&quot;
+    &quot;ts&quot;: &quot;2025-09-15T16:29:56+00:00&quot;
 }</code>
  </pre>
     </span>
@@ -1120,7 +1120,7 @@ vary: Origin
     &quot;status&quot;: &quot;ok&quot;,
     &quot;app&quot;: &quot;Laravel&quot;,
     &quot;env&quot;: &quot;local&quot;,
-    &quot;time&quot;: &quot;2025-09-15T16:11:08.309242Z&quot;,
+    &quot;time&quot;: &quot;2025-09-15T16:29:56.751244Z&quot;,
     &quot;version&quot;: &quot;12.28.1&quot;
 }</code>
  </pre>
@@ -1251,7 +1251,7 @@ vary: Origin
         &quot;cache&quot;: true,
         &quot;storage&quot;: true
     },
-    &quot;time&quot;: &quot;2025-09-15T16:11:08.327815Z&quot;
+    &quot;time&quot;: &quot;2025-09-15T16:29:56.766675Z&quot;
 }</code>
  </pre>
     </span>
@@ -2526,7 +2526,7 @@ content-type: application/json
                 &lt;p class=&quot;mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed&quot;&gt;
                     HTTP request received.
 
-                                            Response rendered in 625ms.
+                                            Response rendered in 572ms.
                                     &lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
@@ -2653,7 +2653,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
-set-cookie: XSRF-TOKEN=eyJpdiI6IkNuNXF1bmR2Snk3NkM3RkVTNndPeHc9PSIsInZhbHVlIjoicTk3T1lrZGZtZHZnNWJvaFdxeXZPTUlvWDRmam5ic3A4WDVEdWtJWmk0Q2VVNHpBNlA3UitaOEFneUpPZ2VFaWxqeXFMSlc4NGk1Q2ZoUWpIYUROUlR4aUlPMDE0enljNXFXSmhzRVE3OW5ndm03S0hSdXYram9PVnhmZjgvNHciLCJtYWMiOiI4MzI2OTIwOTM5OGI3OTI0Y2Y5ZmVmZGZlNWQxODVjYzQ1M2FmM2QxMjFjYjZmNmRjMmI2ZDc0ZWRlZGI4NGM3IiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6IldqNmMyYnh4V0J1K1gzTUJGZGFJK2c9PSIsInZhbHVlIjoiNXhMT0IvTm9QZUsrcklteXpKa0V4aEdDaWxWY1lVaGlDMEtXMEduYUZLOW92cGQ5blN1dWMrWmwzeWhsTVBwVUt1N0JRTWZ2clViWCtZRXZscUlPREp2U2wrUENUMjEzRE5UeUNQdWFic1BGYjl2Z0w1emgvL1oxVklFZzhWQW0iLCJtYWMiOiIzMjk5OTNmODVlNzk1N2U4YTIxNzQ4ZjZhYmRlNDczNjRiOWEzZmY2ODQ3M2E0MjI2ODk2ZjVkNDI0ODQyZTQwIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:11:08 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: XSRF-TOKEN=eyJpdiI6ImlKRE5QYXFCZU5lYnVwYWNqUE1YUHc9PSIsInZhbHVlIjoiWDFJQU15Q1JoMkpuOTRibVUrbW1Ibnhmb2lIS1hrWGJzOGVZYm5SUFBSZlp3U0FxVzJWWUJTWHZVU3JtWlB4WWN5bzl5Q1ZZYk5HYXBNbTlYazhSbmlLV0htTWp0SEE1NFgwZGUvcVV6WmN2WGlHMmVDM2toSDJGRWk4UkdrZ2UiLCJtYWMiOiI2ZjdhZWNjYTdmYzNiNTBiNjZlN2NmYjc0NTRkYjQzNjBjNmYwMWVjZDU0OGFkNGY3ODNlNDQ4MzNlMmJmMmE3IiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:29:56 GMT; Max-Age=7200; path=/; samesite=lax; laravel-session=eyJpdiI6InF3Yi9XZkU3RGtONGRNVVJxNmFBaUE9PSIsInZhbHVlIjoieFVGYVFuYnRqVHVZd3I3eEVqWHJSbGJFVk9RYlZFYlYxZW0ycE5nQ3laRjFqYUZzUFRKVVhTWHpWV1NyOTJ4eW9EdTYvQlZYL0lTUjRlbndPYlA0S3kzdUZXWE1qekJkZzNhV2h3WHROOTdCQll6L2tmTkQ0cGZCSy9ka3BvL00iLCJtYWMiOiI1YTFjMGQ5Y2EyZGVkYTdjYzQ1ZmQyNTk0ZDA0M2EzNjdiZWQ4MDYyOGMzYTNiNzY3NDg2M2NjMjRlMGZmMDYxIiwidGFnIjoiIn0%3D; expires=Mon, 15 Sep 2025 18:29:56 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">&lt;!DOCTYPE html&gt;
